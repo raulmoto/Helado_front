@@ -1,0 +1,98 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  display: flex; /* Usar flexbox para el contenedor principal */
+  justify-content: flex-end; /* Centra el contenido dentro del root */
+  align-items: center; /* Centra el contenido verticalmente dentro del root */
+  width: 100%;
+  height: 100vh; /* Asegura que el root ocupe toda la altura de la ventana */
+  padding: 2rem;
+  text-align: center;
+  
+}
+
+.Carousel{
+  height: 50vh;
+  width: 500px; /* Ancho visible del carrusel */
+   /*  overflow: hidden; Oculta las tarjetas que están fuera de la vista */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.carousel-track{
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+ 
+}
+.imgCard{
+  width: 90%;
+  border-radius: 4px;
+}
+
+.cardBody{
+  background-color: rgb(70, 70, 70);
+  width: 200px;
+}
+.card{
+  border: solid rgb(94, 3, 43) 3px;
+  border-radius: 4px;
+  box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px; 
+  height: 320px; 
+  cursor: pointer;
+}
+
+
+
+.izquierda, .derecha {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.izquierda:hover, .derecha:hover {
+  color: #0056b3;
+}
+@font-face {
+  font-family: 'Milk Peach'; /* Nombre de la fuente */
+  src: url('../src/Fonts/Milk\ Peach.ttf') format('truetype'); /* Ruta al archivo de fuente */
+}
+
+.texto{
+  width: 70%;
+  font-weight: bold;
+  font-family: 'Milk Peach', sans-serif;
+  margin: 40px;
+  font-size:1.5rem;
+  color: azure;
+}
+@media (max-width: 800px) {
+  .Carousel{
+    height: 30vh;
+    width: 300px; /* Ancho visible del carrusel */
+     /*  overflow: hidden; Oculta las tarjetas que están fuera de la vista */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .texto{
+    display: none;
+  }
+}
+
+
+
